@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_mouse"
+            android:title="Mouse" />
+        <item
+            android:id="@+id/nav_keyboard"
+            android:title="Keyboard" />
+        <item
+            android:id="@+id/nav_console"
+            android:title="Console" />
+        <item
+            android:id="@+id/nav_audio"
+            android:title="Audio" />
+    </group>
+
+    <item android:title="Lainnya">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_disclaimer"
+                android:title="Disclaimer" />
+            <item
+                android:id="@+id/nav_privacy"
+                android:title="Privacy" />
+            <item
+                android:id="@+id/nav_policy"
+                android:title="Policy Contact" />
+        </menu>
+    </item>
+</menu>

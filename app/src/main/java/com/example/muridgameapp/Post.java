@@ -21,10 +21,19 @@ public class Post {
     public static class Embedded {
         @SerializedName("wp:featuredmedia")
         public List<FeaturedMedia> featuredMedia;
+
+        @SerializedName("wp:term")
+        public List<List<Term>> terms;
     }
 
     public static class FeaturedMedia {
         @SerializedName("source_url")
         public String sourceUrl;
+    }
+
+    public static class Term {
+        public int id;
+        public String name;
+        public String slug;
     }
 }
