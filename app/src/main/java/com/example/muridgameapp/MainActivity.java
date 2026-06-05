@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // 2. Setup Drawer and Toggle
+        // 2. Setup Drawer dan Toggle
         drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        // 3. Setup RecyclerView and SwipeRefresh
+        // 3. Setup RecyclerView dan SwipeRefresh
         recyclerView = findViewById(R.id.recyclerView);
         swipeRefresh = findViewById(R.id.swipeRefresh);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         });
 
-        // 4. Handle Back Press using OnBackPressedDispatcher
+        // 4. Mengatur interaksi tombol dengan OnBackPressedDispatcher
         getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
